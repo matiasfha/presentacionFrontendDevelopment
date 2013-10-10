@@ -98,8 +98,14 @@ section > header.slide > h1 {
 	color:inherit;
 }
 
+
+#intro{
+	background:url('img/texture.jpg') !important;
+	background-size:cover;
+}
+
 body {
-	background: black url(img/rainbow-wood.jpg) bottom center !important;
+	background:  url(img/noise.jpg) bottom center !important;
 	background-size: cover;
 }
 
@@ -207,9 +213,9 @@ strong, b {
 				font-size:80%;
 			}
 			
-		.slide li {
+		/*.slide li {
 			margin:.2em 0 .4em;
-		}
+		}*/
 		
 		.slide > ul > li:before {
 			content:'\2714';
@@ -236,6 +242,14 @@ section > header.slide {
 		font-size: 400%;
 		line-height: 1;
 		text-align: center;
+	}
+	section > header.slide > img{
+		position:absolute;
+		top:2%;
+		left:30%;
+		right: 0;
+		text-align: center;
+		margin-bottom: 200px;
 	}
 
 .slide .emphasis {
@@ -317,3 +331,95 @@ section > header.slide {
 .regex {
 	color: orange;
 }
+
+.block{
+	color:white;
+	background:#8b9dc3;
+	display: block;
+	border-radius: 10px;
+	height:7em;  
+	width:13em;  
+	padding:1em;
+	font-family:"Reenie Beanie",arial,sans-serif;  
+	font-size:180%;
+	-moz-box-shadow:15px 15px 7px rgba(33,33,33,1);  
+  	-webkit-box-shadow: 15px 15px 7px rgba(33,33,33,.7);  
+  	box-shadow: 15px 15px 7px rgba(33,33,33,.7); 
+
+}
+.block em{
+  		color:#ffcc00;
+  	}
+
+.block p, .block li{
+	font-family: 'Droid Sans Mono', Courier !important;
+	font-size:80% !important;
+}
+
+.sticky{
+	text-decoration:none;  
+  color:#000;  
+  background:#ffc;  
+  display:block;  
+  height:5.6em;  
+  width:8em;  
+  padding:1em;
+  font-family:"Reenie Beanie",arial,sans-serif;  
+  font-size:170%;  
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);  
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);  
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7); 
+  -webkit-transform:rotate(-6deg);  
+  -o-transform:rotate(-6deg);  
+  -moz-transform:rotate(-6deg);  
+  -moz-transition:-moz-transform .15s linear;  
+  -o-transition:-o-transform .15s linear;  
+  -webkit-transition:-webkit-transform .15s linear;  
+}
+
+/*.sticky:hover, .sticky:focus{
+	-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);  
+	-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);  
+	box-shadow:10px 10px 7px rgba(0,0,0,.7);  
+	-webkit-transform: scale(1.25);  
+	-moz-transform: scale(1.25);  
+	-o-transform: scale(1.25);  
+	position:relative;  
+	z-index:5; 
+}*/
+
+.sticky em{
+  		color:#ffcc00;
+  	}
+
+.sticky p, .sticky li{
+	font-family: 'Droid Sans Mono', Courier !important;
+	font-size:60% !important;
+}
+
+ul{
+	list-style:none;	
+}
+
+ul li{
+	font-size:1.8em;
+	margin-bottom:1.6em !important;
+	margin-top:0.2em;
+	margin-left:-1.6em;
+	margin-right:0.5em;
+	/*margin:.2em -1.2em .4em !important;*/
+	word-break:break-all;
+
+}
+
+li li:before {
+	content: '\279C';
+	color: #28bcbc;
+	padding-right: .2em;
+}
+
+ul > li:before {
+			content:'\2714';
+			color: #a0c12c;
+			padding-right: .2em;
+		}

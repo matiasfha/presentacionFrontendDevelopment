@@ -3,29 +3,31 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>FrontEnd Development: jQuery, CoffeeScript y sus amigos</title>
-	
+	<title>¿Así que quieres ser un "Frontend Engineer"?</title>
+	<link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.css" rel="stylesheet"/>
 	<link href="slideshow.css" rel="stylesheet" />
 	<link href="theme.css" rel="stylesheet" />
 	<link href="talk.css" rel="stylesheet" />
 	<link id="prettify-link" href="css/prettify.css" rel="stylesheet" disabled="">
+
 </head>
 <body data-duration="60">
 
 <header id="intro" class="slide">
+<br />
 	<div class="row-fluid">
-		<div class="span10 offset1">
+	<img src="img/engineer.png" style="z-index:9999;position:absolute;top:0;width:320px;float:right;right:0"/>
+		<div class="span10">
 			<div class="hero-unit">
-				<h1>FrontEnd Development</h1>
-				<h2 style="font-size:30px;line-height:40px">jQuery, Coffeescript y sus amigos</h2>
-				<h2 style="font-size:30px;line-height:40px">Overview</h2>
+				<h1>¿Así que quieres ser un "Frontend Engineer"?</h1>
+				<!-- <h2 style="font-size:30px;line-height:40px">jQuery, Coffeescript y sus amigos</h2>
+				<h2 style="font-size:30px;line-height:40px">Overview</h2> -->
 				<hr />
-				<h4>Matías Hernández Arellano &lt;matias[at]dandoo.tv&gt;</h4>
-				<h4>CTO & Lead Developer at Dandoo.tv</h4>
-				<h4>Candidato a Magister en Ciencias de la Computación</h4>
+				<h4>Matías Hernández Arellano &lt;matiasfh[at]gmail.tv&gt;</h4>
+				<h4>FullStack Enginner at <a href="http://empresas.a-dedo.cl">A-Dedo</a></h4>
 				<hr />
-				<h5>UCM - Talca, Octubre 2012</h5>
+				<h5>UCM - Talca, Octubre 2013</h5>
 
  			</div>
 		</div>
@@ -34,61 +36,170 @@
 
 <section>
 	<header class="slide">
-		<h1>Introducción</h1>
+		<img src="img/evolution.png" style="position:absolute;top:10%;left:8%;">
+		<h1 style="position:absolute;top:77%;">(Dev) Evolución</h1>
 	</header>
 	
-	<section class="slide" title="Introducción">
-		<h2>¿Qué es el FrontEnd Development?</h2>
-		<p>Desarrollo del <em>"lado del cliente"</em>. </p>
-		<ul>
-			<li class="delayed">HTMLer</li>
-			<li class="delayed">Web Designer</li>
-			<li class="delayed">Coder, etc</li>
-		</ul>
-		<p>Funciones Básicas</p>
-		<ul>
-			<li class="delayed">Crear el Markup (HTML)</li>
-			<li class="delayed">Crear el Estilo (CSS)</li>
-			<li class="delayed">Cross Browser-platform-device</li>
-			<li class="delayed">Accesibilidad</li>
-			<li class="delayed">Manejo de Eventos</li>
-			<li class="delayed">Performance</li>
+
+	<section class="slide" title="(Dev) Evolución">
+		<!-- <h2>¿Qué es el FrontEnd Development?</h2> -->
+		<ul style="position:relative;top:2em;left:2em;">
+		<li >Diseñador</li>
+		<li >Hacker</li>
+		<li >Developer</li>
+		<li >Ingeniero!</li>
+		<li class="delayed"><em><u>Resolver problemas</u></em></li>
 		</ul>
 	</section>
 	
 	<section class="slide">
-		<h2>Herramientas</h2>
-		<ul>
-			<li class="delayed">HTML (5)></li>
-			<li class="delayed">CSS (3)</li>
-			<li class="delayed">JavaScript</li>
-			<li class="delayed">Un Editor de Texto</li>
-			<li class="delayed">Browser</li>
-			<li class="delayed">Ánimo :D</li>
+		<h2>¿Qué debo conocer?</h2>
+		<br />
+		<div class="row-fluid">
+			<div class="span6 offset5">
+				<img src="img/logo_html5rocks.png">
+				<h3>http://bit.ly/how-browsers-work</h3>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span8 offset3">
+				<h1>Comenzar por enteder al Browser!!</h1>
+			</div>
+		</div>
+	</section>
+</section>
+
+<section>
+	<header class="slide">
+		<div class="row-fluid">
+			<img class="span8 offset4" src="img/Bowser.png" style="width:500px" />
+		<div>
+		<div class="row-fluid">
+			<div class="span8 offset5">
+				<h1>EL B(r)OWSER</h1>
+			</div>
+		</div>
+	</header>
+
+	<section class="slide">
+		<br />
+		<div class="row-fluid">
+			<div class="span6 offset3">
+				<div class="sticky">
+					La plataforma de desarrollo más volatil que se ha conocido... y seguirá siendolo...
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<br />
+		<div class="row-fluid">
+			<div class="span6 offset1">
+				<div class="block" style="margin-top:-20px;">
+				"As a web developer, learning the internals of browser operations <em>helps yo make better decisions</em>
+				and known the justifications behind development best practices". - Paul Irish
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<center>
+			<h1> Es importante cononcer:</h1>
+			
+		</center>
+		<ul style="margin-left:120px;">
+		<li>Parser Flow</li>
+		<li>Dom Tree</li>
+		<li>Render Flow</li>
+		<li>Layout & Paint</li>
+		<li>Event Loop</li>
 		</ul>
 	</section>
+</section>
+
+
+<section>
+	<header class="slide">
+		<h1>CSS .. y buenas prácticas</h1>
+	</header>
+	<section class="slide">
+		<br />
+		<div class="block span8">
+		<h2>¿Qué es CSS?</h2>
+		<p>Cascadeing Style Sheets</p>
+		<p>Lenguaje de definición de presentación de un documento HTML (Hace las cosas <em>bonitas</em>)
+	</section>
+
+	<section class="slide">
+		<br />
+		<div class="sticky span8 offset3">
+			<ul>
+				<li> Los datos de estilo <br /><br />son <em>MUUUY!</em> grandes.</li>
+				<li>  Hacer coincidir <br /><br />reglas es<em>Pesado</em>.</li>
+				<li> La Cascada es <br /><br /><em>Compleja</em>.</li>
+			</ul>
+		</div>
+	</section>
+
+	
+
+	<section class="slide">
+		<br />
+		<div class="block span8">
+			<h1 style="font-size:1.2em;margin-top:-0.4em;margin-bottom:0.5em">Best Practices</h1>
+			<ul>
+				<li> No usar Reset de CSS.<br /><br />(si es necesario usar <br /><br /><a href="http://necolas.github.com/normalize.css">normalize.css</a>).</li>
+				<li> Limitar el uso de <br /><br /><em>!important</em>.</li>
+				<li> <a href="http://bit.ly/css-best-practices">bit.ly/css-best-practices</a>.</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<br />
+		<div class="block span8">
+			<h1 style="font-size:1.2em;margin-top:-0.4em;margin-bottom:0.5em">Best Practices</h1>
+			<ul>
+				<li> Mantener los cambios del <br /><br />DOM al mínimo.</li>
+				<li> Evitar estilos <em>in-line</em>.</li>
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="row-fluid">
+			<div class="span6 offset3">
+				<img src="img/noooo.jpg" width="500">
+				<h1 class="delayed">No uses tablas para tu layout</h1>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		
+			<div class="sticky" style="width:15em;height:9em">
+			<em>Las Clases</em> son tus <em>"amigas"</em>. Utilizar demasiados IDs no es buena idea. Hay que intentar encontrar el término medio donde todos <em>los patrones visuales repetitivos</em> pueden ser abstractos manteniendo <em>baja especificidad. </em>
+			</div>
+		
+	</section>
+	
 </section>
 
 <section>
 	<header class="slide">
 		<h1>HTML (5)</h1>
 	</header>
-	<section class="slide" id="que_es_html">
-		<h2>¿Qué es HTML(5)?</h2>
-		<center>
-			<p class="delayed"><em>Yo programo HTML</p>
-			<p class="delayed"><img src="img/nolodiga.jpg" width="300"/></p>
-			<p class="delayed">No es un lenguaje de programación...</p>
-		</center>
-
-	</section>
-	<section class="slide" id="que_es_html2">
+	
+	<section class="slide">
 		<h2>HyperText Markup Language</h2>
 		<br />
 		<br />
 		<p style="font-size:50px;text-align:center">Es para dar estructura al contenido.. <u>Nada más</u>
 	</section>
-	<section class="slide" id="html5">
+	<section class="slide">
 		<h2>Quinta revisión de HTML</h2>
 		<br />
 		<br />
@@ -103,44 +214,56 @@
 		</p>
 	</section>
 
-	<section class="slide" id="html-ejemplo">
-
-		<pre class="two-column prettyprint"><span class="tag">&lt;body&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">header</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;</span><b><span class="tag">hgroup</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;h1&gt;</span><span class="pln">Page title</span><span class="tag">&lt;/h1&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;h2&gt;</span><span class="pln">Page subtitle</span><span class="tag">&lt;/h2&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;/hgroup&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/header&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">nav</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;ul&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;Navigation...<br>&nbsp; &nbsp;</span><span class="tag">&lt;/ul&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/nav&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">section</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;</span><b><span class="tag">article</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;</span><b><span class="tag">header</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;h1&gt;</span><span class="pln">Title</span><span class="tag">&lt;/h1&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/header&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;section&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;Content...<br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/section&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;/article&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;article&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;header&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;h1&gt;</span><span class="pln">Title</span><span class="tag">&lt;/h1&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/header&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;section&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;Content...<br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/section&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;/article&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/section&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">aside</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;Top links...<br>&nbsp; </span><span class="tag">&lt;/aside&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">figure</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">/&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;</span><b><span class="tag">figcaption</span></b><span class="tag">&gt;</span><span class="pln">Chart 1.1</span><span class="tag">&lt;/figcaption&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/figure&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">footer</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;Copyright ©<br>&nbsp; &nbsp;</span><span class="tag">&lt;</span><b><span class="tag">time</span></b><span class="pln"> </span><b><span class="atn">datetime</span></b><span class="pun">=</span><span class="atv">"2010-11-08"</span><span class="tag">&gt;</span><span class="pln">2010</span><span class="tag">&lt;/time&gt;</span><span class="pln">.<br>&nbsp; </span><span class="tag">&lt;/footer&gt;</span><span class="pln"><br></span><span class="tag">&lt;/body&gt;</span></pre>
+	<section class="slide">
+		<div class="row-fluid">
+			<div class="span6 offset3">
+				<h2 >¿Que debo saber?</h2>
+				<br />
+				<img src="img/fry.jpg" width="500">
+				
+			</div>
+		</div>
 	</section>
+
+	<section class="slide">
+	<br />
+		<div class="block span8 offset1">
+			<ul>
+				<li> No se programa HTML.</li>
+				<li> Conocer los elementos <br/><br />semánticos.</li>
+				<li> Como se construye el DOM.</li>
+				<li> y...</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="row-fluid">
+			<div class="span6 offset3">
+				<img src="img/tim-berners-lee.jpg" width="500">
+				<h2 class="delayed"><a style="color:white"href="http://dig.csail.mit.edu/breadcrumbs/blog/4/">Sir Tim Berners-Lee</a></h2>
+				<h1 class="delayed">y <a href="http://www.w3.org/">W3C</a>
+			</div>
+		</div>
+	</section>
+
+	
 </section>
+
+
 
 <section>
 	<header class="slide">
-		<h1>CSS</h1>
-	</header>
-	<section class="slide" id="que_es_css">
-		<h2>¿Qué es CSS?</h2>
-		<p>Cascadeing Style Sheets</p>
-		<p>Lenguaje de definición de presentación de un documento HTML (Hace las cosas <em>bonitas</em>), Permite:</p>
-		<ul>
-			<li class="delayed">Manejar colores (Fuente, background, etc)</li>
-			<li class="delayed">Posicionar elementos</li>
-			<li class="delayed">Manejar bordes, sombras, gradientes,etc</li>
-			<li class="delayed">Permite crear clases</li>
-			<li class="delayed">CSS3 permite <em>Animaciones</em> por medio de trancisiones</li>
-		</ul>
-	</section>
-	<section class="slide" id="ej_css">
-		<pre class="prettyprint"><span class="tag">&lt;style&gt;</span><span class="pln"><br>&nbsp; </span><span class="pun">[</span><span class="pln">required</span><span class="pun">]</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; border</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#88a;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">box</span><span class="pun">-</span><span class="pln">shadow</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">3px</span><span class="pln"> rgba</span><span class="pun">(</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">255</span><span class="pun">,</span><span class="pln"> </span><span class="pun">.</span><span class="lit">5</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; </span><span class="pun">:</span><span class="pln">invalid </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; border</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#e88;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">box</span><span class="pun">-</span><span class="pln">shadow</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">5px</span><span class="pln"> rgba</span><span class="pun">(</span><span class="lit">255</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="pun">.</span><span class="lit">8</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><br />&nbsp;&nbsp;<span class="pln">body</span><span class="pun">{</span><span class="pln"><br>&nbsp;&nbsp; body</span><span class="pun">:</span><span class="pln"></span><span class="com">black url(img/rainbow-wood.jpg) bottom center !important;</span><span class="pun"><br />&nbsp;&nbsp;}</span>
-			<span class="pln"><br></span><span class="tag">&lt;/style&gt;</span></pre>
-	</section>
-</section>
+		<img src=img/javascript.jpg />
+		<h1 style="top:80%">JavaScript</h1>
 
-<section>
-	<header class="slide">
-		<h1>JavaScript</h1>
 	</header>
-	<section class="slide" id="que_es_js">
+	<section class="slide">
+
 		<h2>¿Qué es JavaScript?</h2>
-		<p>JavaScript no es Java</p>
-		<ul>
+		<ul style="margin-left:120px;">
 			<li>Lenguaje de prototipado</li>
-			<li>Interpretado en el browser (Scripting)</li>
+			<li>Interpretado en el browser</li>
 			<li>Orientado a Eventos</li>
 			<li>Permite Asincronía</li>
 			<li>Extra Flexible... ¿Bueno o Malo?</li>
@@ -148,407 +271,68 @@
 		
 	</section>
 
-	<section class="slide" id="spaghetti">
-		<h2>Normalmente se termina desarrollando</h2>
-		<p></p>
+	<section class="slide">
 		<center>
-			<p><img src="img/spaghetti.jpg" width="600"/></p>
+		<img src="img/angry.png" width="900"/>
+		</center>
+		
+	</section>
+	
+	<section class="slide">
+		<br />
+		<div class="block span8 offset1">
+			<ul>
+				<li> Browser debe interpretarlo</li>
+				<li> JS se ejecuta en el hilo <br /><br />de eventos</li>
+				<li> Se puede manipular el DOM.</li>
+				<li class="delayed"> ¿Mencioné que era flexible?</li>
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<br />
+		<center>
+		<img src="img/spaghettibaby.jpg">
+		<h2 class="delayed">Necesitamos ayuda</h2>
 		</center>
 	</section>
-
-	<section class="slide" id="js-example">
-		<pre class="prettyprint">
-// Helper method for plugins
-self.getSlide = function(element) {
-	var slide = element;
-	while (slide && slide.classList && !slide.classList.contains('slide')) {
-		slide = slide.parentNode;
-	}
-	return slide;
-}
-(document.head || document.getElementsByTagName('head')[0], document.body, document.documentElement);
-// Rudimentary style[scoped] polyfill
-addEventListener('load', function(){
-	$$('style[scoped]').forEach(function(style) {
-		var rulez = style.sheet.cssRules,
-			parentid = style.parentNode.id || self.getSlide(style).id;
-		for(var j=rulez.length; j--;) {
-			var selector = rulez[j].selectorText.replace(/^|,/g, function($0) {
-				return '#' + parentid + ' ' + $0
-			});
-			var cssText = rulez[j].cssText.replace(/^.+?{/, selector + '{');
-			style.sheet.deleteRule(j);
-			style.sheet.insertRule(cssText, j);
-		}
-	});
-});
-		</pre>
-	</section>
-</section>
-
-
-<section>
-	<header class="slide">
-		<h1>jQuery</h1>
-	</header>
 	
 	<section class="slide">
-		<h2>¿Qué es jQuery?</h2>
-		<p>Es una biblioteca pensada para simplificar la manipulación del DOM, eventos, animaciones y Ajax</p>
-		<p> Es software libre <a>http://www.jquery.com</a></p>
-		<ul>
-			<li class="delayed">Selección de elementos</li>
-			<li class="delayed">Interactividad y modificaciones del DOM</li>
-			<li class="delayed">Soporte CSS1-3</li>
-			<li class="delayed">Eventos</li>
-			<li class="delayed">Efectos y animaciones</li>
-			<li class="delayed">Ajax</li>
-			<li class="delayed">Multi-Browser</li>
-		</ul>
+	<br />
+	<center>
+	<img src="img/yoda.gif">
+	<h2 class="delayed">Patrones de diseño</h2>
+	</center>
 	</section>
-	
+
 	<section class="slide">
-		<h2>Ejemplo</h2>
-		<pre class="prettyprint">
-			$("#tablaAlumnos"); // Devolverá el elemento con id="tablaAlumnos"
-			var result = $(".activo"); // Devolverá una matriz de elementos con class="activo"
-		</pre>
-		<pre class="prettyprint">
-			document.getElementById('tablaAlumnos');
-			var result = [];
-			var elems = document.getElementsByTagName('*');
-			for(i in elems){
-				if( (elems[i].className).indexOf("activo") > -1){
-					result.push(elems[i]);
-				}
-			}
+		<br />
+		<div style="float:left;width:50%;">
+			<ul style="font-size:50% !important">
+				<li >Constructor Pattern</li>
+				<li >Module Pattern</li>
+				<li >Singleton Pattern</li>
+				<li >Observer Pattern (Pub/Sub)</li>
+				<li >Facade Pattern</li>
+				<li >Factory Pattern</li>
+				<li class="delayed">Y mucho más...</li>
+			</ul>
 		
-		</pre>
+		</div>
+		<div style="float:right:width:49%">
+			<p >Libro <a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">Learning JavaScript Design Patterns </a> de Addy Osmani
+			</p>
+			<img src="img/lrg.jpg" width="300" />
+		</div>
 	</section>
-</section>
-<section>
-	<header class="slide">
-		<h1>CooffeeScript</h1>
-	</header>
 
-	<section class="slide">
-		<h2>¿Qué es CoffeeScript?</h2>
-		<p>
-			Lenguaje que <em>"compila"</em> a Javascript.
-		</p>
-		<ul>
-			<li>Sintaxis inspirada en Ruby, Python y Haskell</li>
-			<li>Mas legible</li>
-			<li>Mas expresivo</li>
-			<li>Crea mejor JavaScript (y mas pequeño)</li>
-			<li>Todo es una expresión</li>
-			<li>Permite el desarrollo de POO</li>
-		</ul>
-		<p class="presenter-notes"></p>
-	</section>
 	
-	
-	
-	<section class="slide">
-		<h2>¿Por que usarlo?</h2>
-		<p>Básicamente, <em>es más rápido, efectivo y <em>Seguro</em></em>
-		<pre class="prettyprint two-column">
-class Animal
-  constructor: (@name) ->
-
-  move: (meters) ->
-    alert @name + " moved #{meters}m."
-
-class Snake extends Animal
-  move: ->
-    alert "Slithering..."
-    super 5
-
-class Horse extends Animal
-  move: ->
-    alert "Galloping..."
-    super 45
-
-sam = new Snake "Sammy the Python"
-tom = new Horse "Tommy the Palomino"
-
-sam.move()
-tom.move()
-		</pre>
-	</section>
-
-	<section class="slide">
-		<pre class="prettyprint two-column">
-			
-var Animal, Horse, Snake, sam, tom,
-  __hasProp = {}.hasOwnProperty,
-  __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
-
-Animal = (function() {
-
-  function Animal(name) {
-    this.name = name;
-  }
-
-  Animal.prototype.move = function(meters) {
-    return alert(this.name + (" moved " + meters + "m."));
-  };
-
-  return Animal;
-
-})();
-
-Snake = (function(_super) {
-
-  __extends(Snake, _super);
-
-  function Snake() {
-    return Snake.__super__.constructor.apply(this, arguments);
-  }
-
-  Snake.prototype.move = function() {
-    alert("Slithering...");
-    return Snake.__super__.move.call(this, 5);
-  };
-
-  return Snake;
-
-})(Animal);
-
-Horse = (function(_super) {
-
-  __extends(Horse, _super);
-
-  function Horse() {
-    return Horse.__super__.constructor.apply(this, arguments);
-  }
-
-  Horse.prototype.move = function() {
-    alert("Galloping...");
-    return Horse.__super__.move.call(this, 45);
-  };
-
-  return Horse;
-
-})(Animal);
-
-sam = new Snake("Sammy the Python");
-
-tom = new Horse("Tommy the Palomino");
-
-sam.move();
-
-tom.move();
-	</pre>
-		</pre>
-	</section>
-	
-	<section class="slide">
-		<h2>Desventajas</h2>
-		<p>Debugging y Curva de Aprendizaje</p>
-		
-	</section>
 </section>
 
-<section>
-	<header class="slide">
-		<h1>Backbone.js</h1>
-	</header>
-	
-	<section class="slide">
-		<h2>MVC en el lado del Cliente</h2>
-		<p>Permite dar estructura a la aplicación web.
-			Proveyendo <strong>Modelos</strong> (con eventos asociados), <strong>Colecciones</strong>, <strong>Vistas</strong> conectandose con la API Restfull existente... y JSON</p>
-			<br />
-		<p><a>http://www.backbonejs.org</a>
-
-		
-	</section>
-	
-	<section class="slide">
-		<h2>¿Por qué usarlo?</h2>
-		<p>Permite separar/ordenar nuestro código tal como lo hacemos (deberíamos) en el lado del servidor</p>
-	</section>
-
-	<section class="slide">
-		<h2>¿Que gano con utilizarlo?</h2>
-		<ul>
-			<li class="delayed">Modelos/Colecciones se comunican con el server</li>
-			<li class="delayed">Vistas reaccionan a eventos y se comunican con Modelos/Colecciones</li>
-			<li class="delayed">Router permite manipular secciones de nuesta SPA</li>
-		</ul>
-		<p class="delayed">Ember.js, AgularJS, Spine, CanjS</p>
-		<p class="delayed">Para saber más <a>http://www.todomvc.com</a></p>
-	</section>
-
-	<section class="slide">
-		<pre class="prettyprint two-column">
-Person = Backbone.Model.extend({
-	initialize: function(){
-	alert("Welcome to this world");
-	}
-});
-
-var People = Backbone.Collection.extend({
-    model: Person
-});
-
-var person = new Person();
-var person2 = new Person();
-
-var personas = new People([person,person2]);
-
-PersonasView = Backbone.View.extend({
-    initialize: function(){
-    	personas.fetch()
-    	personas.bind('reset',function(){
-    		this.render();
-    	});
-    },
-    render: function(){
-		var template = _.template( $("#personas_template").html(), {personas:personas} );
-        this.el.html( template );
-    }
-});
-
-var AppRouter = Backbone.Router.extend({
-    routes: {
-        "/*actions": "defaultRoute",
-        "/personas":"showPersonas"
-    },
-    defaultRoute: function( actions ){
-        alert( actions ); 
-    },
-    showPeronas: function(){
-    	var personas_view = new PersonasView({ el: $("#personas_container") });
-	}
-});
-var app_router = new AppRouter;
-Backbone.history.start();
-</pre>
-	</section>
-</section>
-
-<section>
-	<header class="slide">
-		<h1>Require.js</h1>
-	</header>
-	<section class="slide">
-		<h2>¿Qué es Require.js</h2>
-		<p>Es una biblioteca que permite la carga de módulos y archivos</p>
-		<p>Mejora la velocidad y calidad de nuestro código</p>
-		<p>Carga asíncrona de módulos y dependencias</p>
-	</section>
-
-	<section class="slide">
-		<h2>¿Cómo?</h2>
-		<p>Es una biblioteca que permite la carga de módulos y archivos</p>
-		<p>Mejora la velocidad y calidad de nuestro código</p>
-		<p class="delayed">Es una especie de <em>include</em> para JavaScript</p>
-		<p class="delayed">Se deben definir módulos, en conjunto con <em>Backbone</em> permite crear módulos para cada parte de nuestra SPA.</p>
-	</section>
-
-	<section class="slide">
-		<pre class="prettyprint two-column">
-// Filename: main.js
 
 
-require.config({
-	paths: {
-		jQuery: 'libs/jquery/jquery',
-		Underscore: 'libs/underscore/underscore',
-		Backbone: 'libs/backbone/backbone'
-	}
-});
-
-require([
-	'app',
-	'order!libs/jquery/jquery-min',
-	'order!libs/underscore/underscore-min',
-	'order!libs/backbone/backbone-min'
-	], function(App){
-	App.initialize();
-});
-		</pre>
-	</section>
-
-	<section class="slide">
-		<pre class="prettyprint">
-// Filename: app.js
-define([
-	'jQuery',
-  	'Underscore',
-  	'Backbone',
-  	'router', // Request router.js
-], function($, _, Backbone, Router){
-  var initialize = function(){
-    // Pass in our Router module and call it's initialize function
-    Router.initialize();
-  }
-
-  return {
-    initialize: initialize
-  };
-});
-</pre>
-	</section>
-
-	<section class="slide">
-		<pre class="prettyprint two-column">
-define([
-  'jQuery',
-  'Underscore',
-  'Backbone',
-  'models/persona',
-  'views/persona'
-], function($, _, Backbone, Personas, PersonaView){
-  var AppRouter = Backbone.Router.extend({
-	  routes: {
-	        "/*actions": "defaultRoute",
-	        "/personas":"showPersonas"
-	    },
-	    defaultRoute: function( actions ){
-	        alert( actions ); 
-	    },
-	    showPeronas: function(){
-	    	var personas_view = new PersonasView({ el: $("#personas_container") });
-		}
-	});
-	var initialize = function(){
-		var app_router = new AppRouter;
-	    Backbone.history.start();
-  	};
-  	return {
-    	initialize: initialize
-  	};
-});
-		</pre>
-	</section>
-	<section class="slide">
-		<pre class="prettyprint">
-define([
-	'jQuery',
-	'Underscore',
-	'Backbone'
-	'collection/personas'
-],function($, _, Backbone,Personas){
-	PersonasView = Backbone.View.extend({
-	    initialize: function(){
-	    	personas = new Personas();
-	    	personas.fetch()
-	    	personas.bind('reset',function(){
-	    		this.render();
-	    	});
-	    },
-	    render: function(){
-			var template = _.template( $("#personas_template").html(), {personas:personas} );
-	        this.el.html( template );
-	    }
-	});
-});
-		</pre>
-	</section>
-</section>
 
 
 <section>
@@ -556,65 +340,134 @@ define([
 		<h1>¿Qué más debo saber?</h1>
 	</header>
 	<header class="slide">
-		<h1 >Patrones de Diseño</h1>
+		<img src="img/tool-box.jpg">
+		<h1 style="top:80%">Herramientas</h1>
+
 	</header>
 	<section class="slide">
-		<br />
-		<ul>
-			<li >Constructor Pattern</li>
-			<li >Module Pattern</li>
-			<li >Singleton Pattern</li>
-			<li >Observer Pattern (Pub/Sub)</li>
-			<li >Facade Pattern</li>
-			<li >Factory Pattern</li>
-			<li class="delayed">Y mucho más...</li>
-		</ul>
-		<p class="delayed">Libro <a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">Learning JavaScript Design Patterns </a> de Addy Osmani
+		<center>
+		<img src="img/bullet.png" width="550"><br />
+		<img src="img/navaja.png" width="450">
+		</center>
 	</section>
+
+	<section class="slide">
+		<center>
+			<img src="img/deti.png" width="450">
+		</center>
+	</section>
+
+	<section class="slide">
+		<div class="sticky" style="width:15em;height:9em">
+			<ul>
+			<li>Distintos Frameworks MV* para JS
+				<ul>
+				<li>Backbone.js</li>
+				<li>AngularJS</li>
+				<li>Emberjs</li>
+				</ul>
+			</li>
+			<li>Compiladores a JS
+				<ul>
+				<li>Coffeescript</li>
+				<li>Objective-J</li>
+				<li>TypeScript</li>
+				<li>Dart</li>
+				</ul>
+			</li>
+
+			</ul>
+
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="block" style="width:15em;height:9em;padding-top:0.1em;">
+			<ul style="margin-left:120px;">
+			<li>UI Libraries (DOM Control)
+				<ul style="margin-left:120px;">
+					<li>jQuery</li>
+					<li>ExtJS</li>
+					<li>YUI</li>
+				</ul>
+			</li>
+			<li>Pre-Procesadores CSS
+				<ul style="margin-left:120px;">
+				<li>LESS</li>
+				<li>SASS</li>
+				<li>Turbine</li>
+				<li>CSSPP</li>
+				</ul>
+			</li>
+
+			</ul>
+
+		</div>
+	</section>
+
+	<section class="slide">
+	<div class="sticky" style="width:15em;height:9em">
+			<ul>
+			<li>Testing
+				<ul>
+				<li>Selenium</li>
+				<li>Mocha</li>
+				<li>Chai</li>
+				</ul>
+			</li>
+			<li>Workflow
+				<ul>
+				<li>yeoman</li>
+				<li>brunch</li>
+				<li>Grunt</li>
+				<li>Maven</li>
+				</ul>
+			</li>
+
+			</ul>
+
+		</div>
+	</section>
+
+	
 </section>
 
 
 <section>
 	<section class="slide">
 		<center>
+			<img src="img/thinkin.jpg" width="800">
+			<h2>¿Aún quieres ser un Frontend Engineer?</h2>
+		</center>
+	</section>
+	<section class="slide">
+		<center>
+			<br />
 			<img src="img/fin.jpg" />
+			<br />
+			<br />
+			<h2 style="font-weight:bold">¿¿¿Preguntas???</h2>
 		</center>
 	</section>
 </section>
 
 <footer class="slide" title="The End">
-	<h2>Gracias!</h2>
-	<br />
-	<center><h1 style="font-size:60px">Preguntas???</h1></center>
-	<br /><br />
-	<p>Contacto:</p>
-	<ul>
-		<li><a href="mailto:matias@dandoo.tv">matiasf[at]dandoo.tv</a></li>
+	
+	<h2>Contacto:</h2><br />
+	<ul style="margin-left:120px">
+		<li><a href="mailto:matias@dandoo.tv">matiasf[at]gmail.com</a></li>
+		<li><a href="http://github.com/msdark">GitHub</a></li>
 		<li><a>www.about.me/msdark</a></li>
 	</ul>
 </footer>
 
 <script src="slideshow.js"></script>
-<script src="plugins/css-edit.js"></script>
-<script src="plugins/css-snippets.js"></script>
-<script src="plugins/css-controls.js"></script>
-<script src="plugins/code-highlight.js"></script>
 <script src="prefixfree.min.js"></script>
-<!-- <script src="js/jquery-1.8.2.min.js"></script> -->
 <script src="js/bootstrap.min.js"></script>
 <script src="http://slides.html5rocks.com/src/prettify/prettify.js" onload="prettyPrint();" defer></script>
 <script>
 var slideshow = new SlideShow();
 
-var snippets = document.querySelectorAll('.snippet');
-for(var i=0; i<snippets.length; i++) {
-	new CSSSnippet(snippets[i]);
-}
-
-var cssControls = document.querySelectorAll('.css-control');
-for(var i=0; i<cssControls.length; i++) {
-	new CSSControl(cssControls[i]);
-}
 </script>
 	
 </body>
